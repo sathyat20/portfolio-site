@@ -26,6 +26,14 @@ export const NavBar = () => {
     setActiveLink(value);
   }
 
+    const handleConnectButtonClick = () => {
+      window.open(
+        "https://www.linkedin.com/in/sathya-thenappan-28ba73174/",
+        "_blank"
+      );
+    };
+
+
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
@@ -85,7 +93,7 @@ export const NavBar = () => {
                   <img src={navIcon2} alt="" className="bigger-svg-icon" />
                 </a>
               </div>
-              <button className="vvd" onClick={() => console.log("connect")}>
+              <button className="vvd" onClick={handleConnectButtonClick}>
                 <span>Let's Connect</span>
               </button>
             </span>
